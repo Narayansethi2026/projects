@@ -119,3 +119,19 @@ body{
     font-size: 32px;
     margin-bottom: 20px;
 }
+.journey-containter{
+   display: flex;
+   gap: 25px;
+}
+.journey-card{
+    width: 360px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0,0,0.15);
+    transition: 3s;
+
+}
+.journey-card:hover{
+    transform:translateY(-10px);
+}
