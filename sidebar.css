@@ -112,3 +112,10 @@ body{
 .nav-btn:hover{
     background-color: #1d4ed8;
 }
+.journey{
+    margin-top: 40px;
+}
+.journey h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
