@@ -70,9 +70,9 @@ body{
     border-radius: 4px;
 
 }
-.main-content{
+.main-contain{
     flex:1;
-    margin-left:260px;
+    margin-left:200px;
     padding:20px;
     background:#f5f7fb;
     min-height:100vh;
@@ -119,9 +119,11 @@ body{
     font-size: 32px;
     margin-bottom: 20px;
 }
-.journey-containter{
+.journey-container{
    display: flex;
    gap: 25px;
+   justify-content: center;
+   flex-wrap:wrap;
 }
 .journey-card{
     width: 360px;
