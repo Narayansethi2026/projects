@@ -17,10 +17,11 @@ body{
 
 }
 .sidebar{
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
-    height: 500px;
+    /* height: 500px; */
+    height: 100vh;
     width: 85px;
     display:flex;
     flex-direction: column;
@@ -223,4 +224,42 @@ card-content h3{
     text-decoration:none;
     border-radius:8px;
     font-weight:600;
+}
+@media (max-width: 768px){
+
+    .sidebar{
+        width:70px;
+        height:100vh;
+    }
+
+    .main-contain{
+        margin-left:70px;
+        width:calc(100% - 70px);
+        padding:15px;
+    }
+
+    .top-navbar{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .center input{
+        width:100%;
+    }
+
+    .right{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .journey-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .journey-card{
+        width:100%;
+        max-width:320px;
+    }
 }
