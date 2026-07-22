@@ -225,41 +225,39 @@ card-content h3{
     border-radius:8px;
     font-weight:600;
 }
-@media (max-width: 768px){
-
-    .sidebar{
-        width:70px;
-        height:100vh;
+.journey-card:hover{
+    transform:translateY(-12) scale(1.05);
+    transition: 4s;
+}
+.book-btn:hover{
+    transform: scale(1.1);
+    box-shadow:0 10px rgba(137,99,235,4);
+}
+.top-navbar{
+    animation:slidedown 1s;
+}
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform:translateY(-60px);
     }
-
-    .main-contain{
-        margin-left:70px;
-        width:calc(100% - 70px);
-        padding:15px;
+    to{
+        opacity:0;
+        transform: translateY(0);
     }
+}
+.journey-card{
+animation:fadeup 1s;
 
-    .top-navbar{
-        flex-direction:column;
-        gap:15px;
-        text-align:center;
-    }
+}
+@keyframes fadup{
 
-    .center input{
-        width:100%;
-    }
-
-    .right{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .journey-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .journey-card{
-        width:100%;
-        max-width:320px;
-    }
+from{
+opacity:0;
+transform:translatey(50px);
+}
+ to{
+ opacity: 1;
+ transform:translatey(0);
+ }
 }
