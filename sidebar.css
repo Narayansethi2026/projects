@@ -261,3 +261,25 @@ transform:translatey(50px);
  transform:translatey(0);
  }
 }
+.footer{
+    background:#0f172a;
+    color:white;
+    margin-top:70px;
+    padding:50px 40px 20px;
+}
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:40px;
+}
+.footer-box{
+    width:220px;
+}
+.footer-box h2{
+    color:#3b82f6;
+    margin-bottom: 15px;
+}
+.footer-box h3{
+    margin-bottom: 15px;
+}
