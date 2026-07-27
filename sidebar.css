@@ -313,11 +313,20 @@ transform:translatey(50px);
     color:#94a3b8
 }
 /* ---------------cta---------- */
-.cta{
-    margin:70px 0;
-    background-color:linear-gradient(135deg,#2563eb,#1e3a8a);
+.cta-section{
+    display:flex;
+    justify-content:center;
+    margin: 70px 0;
 }
-.cta-right img{
-    width:100%;
-    text-align: center;
+.cta-box{
+    width:90%;
+    max-width: 1150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(135deg,#2563eb,#0f122a);
+    border-radius:25px;
+    padding:45px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
