@@ -1,7 +1,7 @@
-img{
-    /* background-image: url("train\ back\ img.png"); */
+.hero{
+    background-image:url("train back img.png") ;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-repeat:no-repeat;
+    min-height:100vh;
 }
