@@ -5,3 +5,34 @@
     background-repeat:no-repeat;
     min-height:100vh;
 }
+.top-actions{
+    position:absolute;
+    top:30px;
+    right:40px;
+}
+
+.coach-btn{
+
+    background:#f59e0b;
+    color:white;
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.coach-btn:hover{
+
+    background:#d97706;
+
+    transform:translateY(-4px);
+
+}
