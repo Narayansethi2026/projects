@@ -32,7 +32,15 @@
 .coach-btn:hover{
 
     background:#d97706;
-
     transform:translateY(-4px);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
 
+}
+html{
+    scroll-behavior: smooth;
 }

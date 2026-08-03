@@ -4,162 +4,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>train booking </title>
-    <link rel="stylesheet" href="train.css"
+
+    <title>Train Booking</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="train.css">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
-
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
 <body>
-    <!-- ======HERO SECTION=======
-     -->
+
+    <!-- ================= HERO SECTION ================= -->
+
     <section class="hero">
+
         <div class="top-actions">
+            <a href="coach.html" class="coach-btn">
+                🚆 Coach Booking
+            </a>
+        </div>
 
-    <a href="coach.html" class="coach-btn">
-        🚆 Coach Booking
-    </a>
-
-</div>
-    <section>
-        
         <div class="overlay"></div>
+
         <div class="hero-container">
+
+            <!-- Left Side -->
+
             <div class="hero-left">
+
                 <span class="tag">
-                    train booking
+                    Train Booking
                 </span>
-                <h1>book train tickts <br>
-                  across india</h1>
-                  <p>
-                    fast secure easy booking
-                    <br> 
-                     book confirmed train tickets in minuts.
-                  </p>
-                  <div class="hero-btn">
-                    <a herf="#search" class="book-btn">
-                        book ticket
+
+                <h1>
+                    Book Train Tickets <br>
+                    Across India
+                </h1>
+
+                <p>
+                    Fast, Secure & Easy Booking.
+                    <br>
+                    Book confirmed train tickets in minutes.
+                </p>
+
+                <div class="hero-btn">
+
+                    <a href="#search" class="book-btn">
+                        Book Ticket
                     </a>
-                    <a herf="#" class="live-btn">
-                        live status
+
+                    <a href="#" class="live-btn">
+                        Live Status
                     </a>
-                  </div>
-            </div>
-        </div>
-        <!-- ======SEARCH BOX====== -->
-         <div class="hero-right">
-            <div class="search-box" id="search">
-                <h2>search trains</h2>
-                <from>
-                    <div class="input-box">
-                        <span class="material-symbols-outlined">
-                            loacaton_on
-                        </span>
-                        <input type="text" placeholder="from station"></input>
-                    </div>
-                    <div class="input-box">
-                         <span class="materil-symbols-outlined">
-                            loacation_on
-                         </span>
-                         <input type="text" placeholder="To station">
 
-                    </div>
-                    <div class="input-box">
-                        <span class="material-symbols-outlined">
-                            calender_month
-                        </span>
-                        <input type="date">
-
-                    
-                    </div>
-                    <div class="input-box">
-                          <span class="material-symbols-outlined">
-                            train
-                          </span>
-                          <select>
-                            <option>genreal</option>
-                            <option>
-                                sleeper
-                            </option>
-                            <option>
-                                AC 3 tier
-                            </option>
-                            <option>
-                                Ac 3 economic
-                            </option>
-                            <option>Ac 2 tier</option>
-                            <option>first Ac</option>
-
-                          </select>
-                    </div>
-                    <button>search</button>
-
-                </from>
-            </div>
-         </div>
-      
-   <!-- ========HERO SECTION END====== -->
-    <!-- =======POPULAR ROUTES  START====== -->
-                   class="popular-routes">
-         <div class="section-title">
-            <h2>popual train routes</h2>
-            <p>most booked routes accross india </p>
-         </div>
-         <div class="route-container">
-            <div class="route-card">
-                <span>🚆</span>
-                <h3>surat -> mumbai</h3>
-                <a href="#">view trains</a>
+                </div>
 
             </div>
-            <div class="route-card">
-                <span>🚆</span>
-                <h3>delhi -> jaipur</h3>
-                <p>shtabdi express</p>
-                <a href="#">view train</a>
+
+            <!-- Right Side -->
+
+            <div class="hero-right">
+
+                <div class="search-box" id="search">
+
+                    <h2>Search Trains</h2>
+
+                    <form>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+
+                            <input type="text" placeholder="From Station">
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+
+                            <input type="text" placeholder="To Station">
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+
+                            <input type="date">
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                train
+                            </span>
+
+                            <select>
+
+                                <option>General</option>
+                                <option>Sleeper</option>
+                                <option>AC 3 Tier</option>
+                                <option>AC 3 Economy</option>
+                                <option>AC 2 Tier</option>
+                                <option>First AC</option>
+
+                            </select>
+
+                        </div>
+
+                        <button type="submit">
+                            Search Trains
+                        </button>
+
+                    </form>
+
+                </div>
+
             </div>
-              </div>
-
-        <div class="route-card">
-
-            <span>🚆</span>
-
-            <h3>Ahmedabad → Rajkot</h3>
-
-            <p>Intercity Express</p>
-
-            <a href="#">View Trains</a>
 
         </div>
 
-        <div class="route-card">
+    </section>
 
-            <span>🚆</span>
+    <!-- ================= POPULAR ROUTES ================= -->
 
-            <h3>Kolkata → Puri</h3>
+    <section class="popular-routes">
 
-            <p>Duronto Express</p>
+        <div class="section-title">
 
-            <a href="#">View Trains</a>
+            <h2>🔥 Popular Train Routes</h2>
+
+            <p>Most booked routes across India</p>
+
+        </div>
+
+        <div class="route-container">
+
+            <div class="route-card">
+
+                <span>🚆</span>
+
+                <h3>Surat → Mumbai</h3>
+
+                <p>Vande Bharat Express</p>
+
+                <a href="#">View Trains</a>
+
+            </div>
+
+            <div class="route-card">
+
+                <span>🚆</span>
+
+                <h3>Delhi → Jaipur</h3>
+
+                <p>Shatabdi Express</p>
+
+                <a href="#">View Trains</a>
+
+            </div>
+
+            <div class="route-card">
+
+                <span>🚆</span>
+
+                <h3>Ahmedabad → Rajkot</h3>
+
+                <p>Intercity Express</p>
+
+                <a href="#">View Trains</a>
+
+            </div>
+
+            <div class="route-card">
+
+                <span>🚆</span>
+
+                <h3>Kolkata → Puri</h3>
+
+                <p>Duronto Express</p>
+
+                <a href="#">View Trains</a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= AVAILABLE TRAINS START ================= -->
+
+<section class="train-results">
+
+    <div class="section-title">
+        <h2>🚆 Available Trains</h2>
+        <p>Choose your preferred train and start your journey.</p>
+    </div>
+
+    <!-- Train Card 1 -->
+
+    <div class="train-card">
+
+        <div class="train-left">
+
+            <h2>🚄 Vande Bharat Express</h2>
+
+            <p class="train-no">Train No : 20902</p>
+
+            <div class="time-box">
+
+                <div>
+                    <h3>06:15 AM</h3>
+                    <span>Surat (ST)</span>
+                </div>
+
+                <div class="journey-line">
+                    ─────────── 2h 45m ───────────
+                </div>
+
+                <div>
+                    <h3>09:00 AM</h3>
+                    <span>Mumbai Central (MMCT)</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="train-right">
+
+            <h3>₹850</h3>
+
+            <p class="seat available">
+                ● 42 Seats Available
+            </p>
+
+            <div class="train-btns">
+
+                <a href="coach.html" class="seat-btn">
+                    View Seats
+                </a>
+
+                <a href="passenger.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Train Card 2 -->
+
+    <div class="train-card">
+
+        <div class="train-left">
+
+            <h2>🚆 Shatabdi Express</h2>
+
+            <p class="train-no">Train No : 12010</p>
+
+            <div class="time-box">
+
+                <div>
+                    <h3>08:30 AM</h3>
+                    <span>Ahmedabad</span>
+                </div>
+
+                <div class="journey-line">
+                    ─────────── 5h 20m ───────────
+                </div>
+
+                <div>
+                    <h3>01:50 PM</h3>
+                    <span>Mumbai</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="train-right">
+
+            <h3>₹1,120</h3>
+
+            <p class="seat waiting">
+                ● Waiting 12
+            </p>
+
+            <div class="train-btns">
+
+                <a href="coach.html" class="seat-btn">
+                    View Seats
+                </a>
+
+                <a href="passenger.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Train Card 3 -->
+
+    <div class="train-card">
+
+        <div class="train-left">
+
+            <h2>🚉 Rajdhani Express</h2>
+
+            <p class="train-no">Train No : 12952</p>
+
+            <div class="time-box">
+
+                <div>
+                    <h3>10:20 PM</h3>
+                    <span>Delhi</span>
+                </div>
+
+                <div class="journey-line">
+                    ─────────── 13h 15m ───────────
+                </div>
+
+                <div>
+                    <h3>11:35 AM</h3>
+                    <span>Mumbai</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="train-right">
+
+            <h3>₹2,450</h3>
+
+            <p class="seat available">
+                ● 18 Seats Available
+            </p>
+
+            <div class="train-btns">
+
+                <a href="coach.html" class="seat-btn">
+                    View Seats
+                </a>
+
+                <a href="passenger.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
 
         </div>
 
     </div>
 
 </section>
-         </div>
 
-     </setion>
-       
-    
-    
+<!-- ================= TRAIN FACILITIES ================= -->
+
+<section class="facilities">
+
+    <div class="section-title">
+
+        <h2>⭐ Why Choose Ticket Window?</h2>
+
+    </div>
+
+    <div class="facility-container">
+
+        <div class="facility-card">
+
+            <h3>⚡ Instant Booking</h3>
+
+            <p>Book your tickets within seconds.</p>
+
+        </div>
+
+        <div class="facility-card">
+
+            <h3>🔒 Secure Payment</h3>
+
+            <p>100% Safe & Trusted Payment Gateway.</p>
+
+        </div>
+
+        <div class="facility-card">
+
+            <h3>📱 Mobile Tickets</h3>
+
+            <p>No print required. Show your e-ticket.</p>
+
+        </div>
+
+        <div class="facility-card">
+
+            <h3>🎧 24×7 Support</h3>
+
+            <p>Customer support available anytime.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PART-3 END ================= -->
 </body>
 
 </html>
