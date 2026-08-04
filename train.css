@@ -1,10 +1,10 @@
-.hero{
+/* .hero{
     background-image:url("train back img.png") ;
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
-    min-height:100vh;
-}
+    min-height:100vh; */
+
 .top-actions{
     position:absolute;
     top:30px;
@@ -43,4 +43,69 @@
 }
 html{
     scroll-behavior: smooth;
+
+}
+body{
+    background:#f8fafc;
+    color:#222;
+    overflow-x: hidden;
+
+}
+/* ===hero section====== */
+.hero{
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    background: linear-gradient(
+        rgba(8,15,40..70),
+        rgba(8,15,40..70)
+        );
+    /* url("train back img.png"); */
+    background-size: cover;
+    background-position:center;
+    background-image:url("train back img.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,rgba(0,0,.35),rgba(0,0,0,.15));
+
+}
+.hero-container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    gap:70px;
+}
+.hero-left{
+    flex:1;
+    color:white
+}
+.tag{
+    display:inline-block;
+    background:#f59e0b;
+    padding:10px 22px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+.hero-left h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom: 20px;
+}
+.hero-left p{
+    font-size:20px;
+    line-height:35px;
+    color:#dbeafe;
+    margin-bottom: 35px;
+    
 }
