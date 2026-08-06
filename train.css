@@ -109,3 +109,20 @@ body{
     margin-bottom: 35px;
     
 }
+/* ======buttons======= */
+.hero-btn{
+    display:flex;
+    gap:20ox;
+}
+.book-btn{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:16px 35px;
+    font-weight:600;
+    transition:35s;
+}
+.book-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px)
+}
