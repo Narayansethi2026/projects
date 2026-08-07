@@ -174,3 +174,39 @@ body{
     border-radius:12px;
     margin-bottom:18px;
 }
+.input-box span{
+    color:#2563eb;
+}
+.input-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:15px;
+    background:none;
+}
+.input-box select{
+    width:100%;
+    border:none;
+    outline:none;
+    background:none;
+    font-size:15px;
+}
+/* ===search button==== */
+.search-box button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    margin-top:10px;
+    cursor:pointer;
+    background:#f59e0b;
+    color:white;
+    font-weight: 600;
+    font-size:17px;
+    transition:.35s;
+}
+.search-box button:hover{
+    background:#d97706;
+   
+    transform:translateY(-4px);
+}
