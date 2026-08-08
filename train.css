@@ -210,3 +210,23 @@ body{
    
     transform:translateY(-4px);
 }
+/* ====coach button==== */
+.top-actions{
+    position:absolute;
+    top:20px;
+    right:0;
+
+}
+.coach-btn{
+    text-decoration:none;
+    color:white;
+    background:#16a34a;
+    padding:12px 25px;
+    border-radius: 12px;
+    font-weight:600;
+    transition:.35s;
+}
+.coach-btn:hover{
+    background:#15803d;
+    transform:translateY(-4px);
+}
