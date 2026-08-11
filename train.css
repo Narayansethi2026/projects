@@ -262,4 +262,26 @@ body{
     color:#64748b;
     font-size:16px;
 }
+/* ====offer contanier===== */
+.offer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
 
+}
+/* =====offer card===== */
+.offer-card{
+    position: relative;
+    min-height:270px;
+    border-radius: 25px;
+    overflow: hidden;
+    padding:32px;
+    color:white;
+    box-shadow: 0 15px 35px rgba(15,23,42,15);
+    transition: 
+    transform .45s ease,
+    box-shadow .45s ease;
+    isolation: isolate;
+}
