@@ -311,3 +311,52 @@ body{
 .offer-orange{
     background: linear-gradient(135deg,#f97316,#c2410c);
 }
+.offer-blue{
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+
+}
+.offer-green{
+    background: linear-gradient(135deg,#16a34a,#166534);
+}
+/* ======offer content====== */
+.offer-content{
+    position: relative;
+    z-index:2;
+}
+.offer-icon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:55px;
+    height:55px;
+    border-radius:15px;
+    background:rgba(255,255,255,.20);
+    font-size:27px;
+    margin-bottom:22px;
+    backdrop-filter: blur(8px);
+
+}
+.offer-content h3{
+    font-size:17px;
+    font-weight:500;
+    margin-bottom: 7px;
+}
+.offer-content h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.offer-content p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    color:rgba(255,255,255,.88);
+
+    max-width:300px;
+
+}
