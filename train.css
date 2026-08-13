@@ -360,3 +360,20 @@ body{
     max-width:300px;
 
 }
+/* =====offer button===== */
+.offer-content button{
+    margin-top:20px;
+    border:none;
+    padding:11px 22px;
+    border-radius: 10px;
+    background: white;
+    color:#1e3a8a; 
+    font-size: 14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+}
+.offer-content button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
