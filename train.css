@@ -499,3 +499,45 @@ body{
     padding:80px 6%;
     background: #f8fafc;
 }
+.service-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.service-card{
+    background:white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.88);
+    transition:.4s;
+}
+/* ====or baki hai===== */
+/* ==========train-results======== */
+.train-result{
+    padding:90px 6%;
+}
+.train-card{
+
+    max-width:1200px;
+
+    margin:25px auto;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:25px;
+    box-shadow:
+    0 12px 35px rgba(0,0,0,.08);
+     transition:.4s;
+}
