@@ -114,7 +114,7 @@ body{
     display:flex;
     gap:20px;
 }
-.book-btn{
+.bok-btn{
     text-decoration:none;
     color:white;
     background:#2563eb;
@@ -577,3 +577,36 @@ body{
     margin-bottom:20px;
     font-weight:600;
 }
+.available{
+    color:#d97706;
+}
+.waiting{
+    color:#dc2626;
+}
+/* ==========train buttons========== */
+.train-btn{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+.seat-btn{
+    text-decoration: none;
+    padding:12px 20px;
+    border-radius:10px;
+    background: #e2e8f0;
+    color:#0f172a;
+    font-weight: 600;    
+}
+.book-btn{
+    text-decoration: none;
+    padding:12px 20px;
+    border-radius: 10px;
+    background: #2563eb;
+    color:white;
+    font-weight: 600;
+    transition: .3s;   
+}
+.book-btn:hover{
+    background: #1d4ed8;  
+}
+/* =====why chose us===== */
