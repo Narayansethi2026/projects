@@ -541,3 +541,39 @@ body{
     0 12px 35px rgba(0,0,0,.08);
      transition:.4s;
 }
+.train-card:hover{
+    transform: translateY(-8px);
+}
+.train-left{
+    flex:1;
+}
+.train-left h2{
+    color:0f172a;
+    margin-bottom:8px;
+}
+.train-no{
+    color:#64748b;
+    margin-bottom:20px;
+}
+.time-box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;   
+}
+.time-box h3{
+    color:#2563eb;
+}
+.time-box span{
+    color:#64748b;
+    font-weight: 600;
+}
+/* =====right side====== */
+.train-right{
+    text-align: center;
+    min-width:220px;
+}
+.seat{
+    margin-bottom:20px;
+    font-weight:600;
+}
