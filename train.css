@@ -610,3 +610,21 @@ body{
     background: #1d4ed8;  
 }
 /* =====why chose us===== */
+.facilities{
+    padding:80px 6%;
+    background:#f8fafc;    
+}
+.facility-container{   
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+     gap: 25px; 
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.facility-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
