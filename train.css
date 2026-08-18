@@ -627,4 +627,63 @@ body{
     padding:30px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .4s;
+
+}
+.facility-card:hover{
+    transform: translateY(-10px);
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+    color:white;
+}
+.facility-card h3{
+    margin-bottom:10px;
+}
+/* ====mobie responce====== */
+@media(max-width:900px){
+
+    .train-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .time-box{
+
+        flex-direction:column;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .popular-routes,
+    .services,
+    .train-results,
+    .facilities{
+
+        padding:60px 20px;
+
+    }
+
+    .train-card{
+
+        padding:20px;
+
+    }
+
+    .train-right{
+
+        width:100%;
+
+    }
+
+    .train-btns{
+
+        flex-direction:column;
+
+    }
+
 }
