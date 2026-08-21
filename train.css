@@ -687,3 +687,49 @@ body{
     }
 
 }
+/* 1.hero floating animation */
+.hero-left,
+.hero-right{
+    animation:herApper 1s ease forwards;
+}
+@keyframes heroAppear {
+    from{
+        opacity:0;
+       transform: translateY(35px); 
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+    
+}
+/* =====================================================
+   2. SEARCH BOX FLOATING EFFECT
+===================================================== */
+
+.search-box{
+
+    animation:
+    floatingBox 5s ease-in-out infinite;
+
+}
+
+@keyframes floatingBox{
+
+    0%,
+    100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-10px);
+
+    }
+
+}
+
