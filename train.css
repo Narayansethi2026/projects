@@ -732,4 +732,48 @@ body{
     }
 
 }
+/* 3.button shine effect */
+.book-btn,
+.coch-btn,
+.search-box buttoon{
+    position:relative;
+    overflow: hidden;
+}
+.book-btn::before,
+.coach-btn::before,
+.search-box button::before{
 
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+
+    transform:
+    skewX(-20deg);
+
+    transition:.6s;
+
+}
+
+.book-btn:hover::before,
+.coach-btn:hover::before,
+.search-box button:hover::before{
+
+    left:130%;
+
+}
