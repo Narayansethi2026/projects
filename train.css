@@ -777,3 +777,86 @@ body{
     left:130%;
 
 }
+/* 4. OFFER CARD FLOATING EFFECT */
+
+.offer-card:nth-child(1){
+
+    animation:
+    offerFloat1 5s ease-in-out infinite;
+
+}
+
+.offer-card:nth-child(2){
+
+    animation:
+    offerFloat2 5s ease-in-out infinite;
+
+}
+
+.offer-card:nth-child(3){
+
+    animation:
+    offerFloat3 5s ease-in-out infinite;
+
+}
+
+
+@keyframes offerFloat1{
+
+    0%,
+    100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-7px);
+
+    }
+
+}
+
+
+@keyframes offerFloat2{
+
+    0%,
+    100%{
+
+        transform:
+        translateY(-4px);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(6px);
+
+    }
+
+}
+
+
+@keyframes offerFloat3{
+
+    0%,
+    100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-7px);
+
+    }
+
+}
+
