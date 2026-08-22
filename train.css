@@ -859,4 +859,257 @@ body{
     }
 
 }
+/* =====================================================
+   5. TRAIN CARD ENTRY ANIMATION
+===================================================== */
 
+.train-card{
+
+    animation:
+    trainAppear .8s ease both;
+
+}
+
+.train-card:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.train-card:nth-child(3){
+
+    animation-delay:.30s;
+
+}
+
+.train-card:nth-child(4){
+
+    animation-delay:.45s;
+
+}
+
+
+@keyframes trainAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   6. TRAIN CARD HOVER GLOW
+===================================================== */
+
+.train-card:hover{
+
+    box-shadow:
+    0 20px 50px
+    rgba(37,99,235,.16);
+
+}
+
+
+/* =====================================================
+   7. FACILITY ICON / CARD EFFECT
+===================================================== */
+
+.facility-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.facility-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:
+    rgba(37,99,235,.08);
+
+    top:-50px;
+
+    right:-40px;
+
+    transition:.5s;
+
+}
+
+.facility-card:hover::before{
+
+    transform:
+    scale(2.5);
+
+}
+
+
+/* =====================================================
+   8. ROUTE CARD ICON ANIMATION
+===================================================== */
+
+.route-card span{
+
+    transition:.4s;
+
+}
+
+.route-card:hover span{
+
+    transform:
+    scale(1.2)
+    rotate(5deg);
+
+}
+
+
+/* =====================================================
+   9. FOOTER SOCIAL ANIMATION
+===================================================== */
+
+.social-links a{
+
+    position:relative;
+
+}
+
+.social-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:10px;
+
+    border:
+    1px solid rgba(255,255,255,.2);
+
+    transform:
+    scale(.8);
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+.social-links a:hover::after{
+
+    transform:
+    scale(1.15);
+
+    opacity:1;
+
+}
+
+
+/* =====================================================
+   10. SMOOTH SECTION APPEARANCE
+===================================================== */
+
+.popular-routes,
+.services,
+.train-results,
+.facilities,
+.offers{
+
+    animation:
+    sectionAppear 1s ease both;
+
+}
+
+@keyframes sectionAppear{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* =====================================================
+   11. COACH BUTTON PULSE
+===================================================== */
+
+.coach-btn{
+
+    animation:
+    coachPulse 2.5s ease-in-out infinite;
+
+}
+
+@keyframes coachPulse{
+
+    0%,
+    100%{
+
+        box-shadow:
+        0 0 0 0
+        rgba(22,163,74,.35);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 0 8px
+        rgba(22,163,74,0);
+
+    }
+
+}
+
+
+/* =====================================================
+   12. REDUCE ANIMATION FOR USERS
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+
+        animation-iteration-count:1 !important;
+
+        transition-duration:.01ms !important;
+
+    }
+
+}
