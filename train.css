@@ -57,8 +57,8 @@ body{
     width: 100%;
     min-height:100vh;
     background: linear-gradient(
-        rgba(8,15,40..70),
-        rgba(8,15,40..70)
+        rgba(8,15,40,.70),
+        rgba(8,15,40,.70)
         );
     /* url("train back img.png"); */
     background-size: cover;
@@ -73,7 +73,7 @@ body{
 .overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(135deg,rgba(0,0,.35),rgba(0,0,0,.15));
+    background:linear-gradient(135deg,rgba(0,0,0,.35),rgba(0,0,0,.15));
 
 }
 .hero-container{
@@ -123,7 +123,7 @@ body{
     transition: all 0.35s ease;
     border-radius: 12px;
 }
-.book-btn:hover{
+.bok-btn:hover{
     background:#1d4ed8;
     transform:translateY(-5px)
 }
@@ -304,7 +304,7 @@ body{
     box-shadow:0 25px  55px rgba(15,23,42,.25);
 
 }
-.offe-card:hover::before{
+.offer-card:hover::before{
     transform:scale(1.5);
 }
 /*======offer color======*/
@@ -515,7 +515,7 @@ body{
 }
 /* ====or baki hai===== */
 /* ==========train-results======== */
-.train-result{
+.train-results{
     padding:90px 6%;
 }
 .train-card{
@@ -548,7 +548,7 @@ body{
     flex:1;
 }
 .train-left h2{
-    color:0f172a;
+    color:#0f172a;
     margin-bottom:8px;
 }
 .train-no{
@@ -584,7 +584,7 @@ body{
     color:#dc2626;
 }
 /* ==========train buttons========== */
-.train-btn{
+.train-btns{
     display:flex;
     gap:10px;
     justify-content: center;
@@ -690,7 +690,7 @@ body{
 /* 1.hero floating animation */
 .hero-left,
 .hero-right{
-    animation:herApper 1s ease forwards;
+    animation:heroApper 1s ease forwards;
 }
 @keyframes heroAppear {
     from{
@@ -734,8 +734,8 @@ body{
 }
 /* 3.button shine effect */
 .book-btn,
-.coch-btn,
-.search-box buttoon{
+.coach-btn,
+.search-box button{
     position:relative;
     overflow: hidden;
 }
@@ -1112,4 +1112,662 @@ body{
 
     }
 
+}
+/* =====================================================
+   CSS PART-5 — FINAL RESPONSIVE & POLISH
+===================================================== */
+
+
+/* =====================================================
+   LARGE LAPTOP / DESKTOP
+===================================================== */
+
+@media (max-width:1200px){
+
+    .hero{
+        padding:50px 35px;
+    }
+
+    .hero-left h1{
+        font-size:50px;
+    }
+
+    .hero-container{
+        gap:40px;
+    }
+
+    .footer-container{
+        padding-left:35px;
+        padding-right:35px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:900px){
+
+    /* HERO */
+
+    .hero{
+
+        min-height:auto;
+
+        padding:100px 25px 60px;
+
+    }
+
+    .hero-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-left{
+
+        width:100%;
+
+    }
+
+    .hero-left h1{
+
+        font-size:44px;
+
+    }
+
+    .hero-left p{
+
+        font-size:17px;
+
+        line-height:29px;
+
+    }
+
+
+    /* HERO BUTTONS */
+
+    .hero-btn{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+
+    /* SEARCH */
+
+    .hero-right{
+
+        width:100%;
+
+    }
+
+    .search-box{
+
+        max-width:550px;
+
+    }
+
+
+    /* TOP ACTION */
+
+    .top-actions{
+
+        top:20px;
+
+        right:20px;
+
+    }
+
+
+    /* TRAIN TIME */
+
+    .time-box{
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:600px){
+
+    body{
+
+        width:100%;
+
+        overflow-x:hidden;
+
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero{
+
+        padding:
+
+        90px 18px 45px;
+
+    }
+
+    .hero-container{
+
+        width:100%;
+
+        gap:35px;
+
+    }
+
+    .hero-left h1{
+
+        font-size:34px;
+
+        line-height:1.25;
+
+    }
+
+    .hero-left p{
+
+        font-size:15px;
+
+        line-height:26px;
+
+    }
+
+
+    /* ================= TAG ================= */
+
+    .tag{
+
+        font-size:12px;
+
+        padding:8px 16px;
+
+    }
+
+
+    /* ================= BUTTONS ================= */
+
+    .hero-btn{
+
+        flex-direction:column;
+
+        width:100%;
+
+        gap:12px;
+
+    }
+
+    .book-btn,
+    .live-btn{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:14px;
+
+    }
+
+
+    /* ================= COACH BUTTON ================= */
+
+    .top-actions{
+
+        position:absolute;
+
+        top:15px;
+
+        right:15px;
+
+    }
+
+    .coach-btn{
+
+        font-size:12px;
+
+        padding:9px 14px;
+
+    }
+
+
+    /* ================= SEARCH BOX ================= */
+
+    .search-box{
+
+        width:100%;
+
+        padding:22px;
+
+        border-radius:20px;
+
+    }
+
+    .search-box h2{
+
+        font-size:21px;
+
+    }
+
+
+    /* ================= INPUT ================= */
+
+    .input-box{
+
+        padding:12px 14px;
+
+    }
+
+    .input-box input,
+    .input-box select{
+
+        font-size:14px;
+
+    }
+
+
+    /* ================= SECTION ================= */
+
+    .section-title{
+
+        margin-bottom:30px;
+
+    }
+
+    .section-title h2{
+
+        font-size:27px;
+
+    }
+
+    .section-title p{
+
+        font-size:14px;
+
+    }
+
+
+    /* ================= OFFERS ================= */
+
+    .offers{
+
+        padding:55px 18px;
+
+    }
+
+    .offer-card{
+
+        min-height:240px;
+
+        padding:25px;
+
+    }
+
+    .offer-content h2{
+
+        font-size:26px;
+
+    }
+
+
+    /* ================= ROUTES ================= */
+
+    .popular-routes{
+
+        padding:55px 18px;
+
+    }
+
+    .route-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* ================= SERVICES ================= */
+
+    .services{
+
+        padding:55px 18px;
+
+    }
+
+    .service-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* ================= TRAIN RESULTS ================= */
+
+    .train-results{
+
+        padding:55px 18px;
+
+    }
+
+    .train-card{
+
+        width:100%;
+
+        margin:18px auto;
+
+        padding:22px 18px;
+
+        border-radius:20px;
+
+    }
+
+    .train-left h2{
+
+        font-size:21px;
+
+    }
+
+    .train-no{
+
+        font-size:13px;
+
+    }
+
+
+    /* ================= TIME ================= */
+
+    .time-box{
+
+        gap:12px;
+
+    }
+
+    .time-box h3{
+
+        font-size:18px;
+
+    }
+
+    .time-box span{
+
+        font-size:12px;
+
+    }
+
+    .journey-line{
+
+        font-size:11px;
+
+        white-space:nowrap;
+
+        overflow:hidden;
+
+        max-width:100%;
+
+    }
+
+
+    /* ================= TRAIN RIGHT ================= */
+
+    .train-right{
+
+        width:100%;
+
+        min-width:0;
+
+    }
+
+    .train-right h3{
+
+        font-size:26px;
+
+    }
+
+
+    /* ================= TRAIN BUTTON ================= */
+
+    .train-btns{
+
+        width:100%;
+
+        flex-direction:column;
+
+    }
+
+    .seat-btn,
+    .train-right .book-btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+    /* ================= FACILITIES ================= */
+
+    .facilities{
+
+        padding:55px 18px;
+
+    }
+
+    .facility-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer-container{
+
+        padding:
+
+        45px 22px 30px;
+
+        gap:35px;
+
+    }
+
+    .footer-logo h2{
+
+        font-size:21px;
+
+    }
+
+    .footer-brand > p{
+
+        font-size:13px;
+
+    }
+
+    .footer-column{
+
+        gap:11px;
+
+    }
+
+    .footer-column h3{
+
+        font-size:16px;
+
+    }
+
+    .footer-column a{
+
+        font-size:13px;
+
+    }
+
+    .footer-bottom{
+
+        padding:
+
+        18px 22px;
+
+    }
+
+    .footer-bottom p{
+
+        font-size:11px;
+
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width:380px){
+
+    .hero-left h1{
+
+        font-size:29px;
+
+    }
+
+    .hero-left p{
+
+        font-size:14px;
+
+    }
+
+    .search-box{
+
+        padding:18px;
+
+    }
+
+    .offer-card{
+
+        padding:20px;
+
+    }
+
+    .offer-content h2{
+
+        font-size:23px;
+
+    }
+
+    .train-card{
+
+        padding:18px 14px;
+
+    }
+
+}
+
+
+/* =====================================================
+   FINAL HOVER POLISH
+===================================================== */
+
+button,
+a{
+
+    -webkit-tap-highlight-color:
+    transparent;
+
+}
+
+button:active,
+a:active{
+
+    transform:
+    scale(.97);
+
+}
+
+
+/* =====================================================
+   SELECTION COLOR
+===================================================== */
+
+::selection{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* =====================================================
+   CSS COMPLETE ✅
+===================================================== */
+
+/* =========================================================
+   TICKET WINDOW — PREMIUM FOOTER
+   ========================================================= */
+
+.footer {
+    position: relative;
+    width: 100%;
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(37, 99, 235, 0.22),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(22, 163, 74, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a 45%,
+            #111827
+        );
+
+    color: white;
+    overflow: hidden;
 }
