@@ -7,5 +7,318 @@
 </head>
 <body>
     <h2>this is a flight tkt sction</h2>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flight Booking | Ticket Window</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="flight.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         FLIGHT BOOKING PAGE
+    ================================================== -->
+
+    <main class="flight-page">
+
+
+        <!-- =================================================
+             HERO / BACKGROUND SECTION
+        ================================================== -->
+
+        <section class="flight-hero">
+
+
+            <!-- Dark overlay for better readability -->
+            <div class="hero-overlay"></div>
+
+
+            <!-- =================================================
+                 TOP BRAND
+            ================================================== -->
+
+            <div class="flight-brand">
+
+                <img src="logo.png" alt="Ticket Window Logo">
+
+                <div>
+                    <h2>Ticket Window</h2>
+                    <span>Flight Booking</span>
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 HERO TEXT
+            ================================================== -->
+
+            <div class="flight-heading">
+
+                <span class="heading-tag">
+                    ✈️ FLIGHT BOOKING
+                </span>
+
+                <h1>
+                    Where do you want
+                    <span>to fly?</span>
+                </h1>
+
+                <p>
+                    Search and book your flight quickly,
+                    easily and securely.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 BOOKING CARD
+            ================================================== -->
+
+            <div class="flight-booking-card">
+
+
+                <!-- ===============================
+                     TRIP TYPE
+                ================================ -->
+
+                <div class="trip-type">
+
+                    <label class="trip-option active">
+
+                        <input
+                            type="radio"
+                            name="trip"
+                            checked
+                        >
+
+                        <span class="radio-circle"></span>
+
+                        Round Trip
+
+                    </label>
+
+
+                    <label class="trip-option">
+
+                        <input
+                            type="radio"
+                            name="trip"
+                        >
+
+                        <span class="radio-circle"></span>
+
+                        One Way
+
+                    </label>
+
+
+                    <label class="trip-option">
+
+                        <input
+                            type="radio"
+                            name="trip"
+                        >
+
+                        <span class="radio-circle"></span>
+
+                        Multi City
+
+                    </label>
+
+                </div>
+
+
+                <!-- ===============================
+                     BOOKING FIELDS
+                ================================ -->
+
+                <div class="flight-fields">
+
+
+                    <!-- FROM -->
+
+                    <div class="flight-field">
+
+                        <span class="material-symbols-outlined field-icon">
+                            flight_takeoff
+                        </span>
+
+                        <div class="field-content">
+
+                            <label>FROM</label>
+
+                            <h3>Surat</h3>
+
+                            <p>
+                                STV • Surat Airport
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ===============================
+                         SWAP BUTTON
+                    ================================ -->
+
+                    <button
+                        type="button"
+                        class="swap-flight"
+                        title="Swap airports"
+                    >
+
+                        <span class="material-symbols-outlined">
+                            swap_horiz
+                        </span>
+
+                    </button>
+
+
+                    <!-- TO -->
+
+                    <div class="flight-field">
+
+                        <span class="material-symbols-outlined field-icon">
+                            flight_land
+                        </span>
+
+                        <div class="field-content">
+
+                            <label>TO</label>
+
+                            <h3>Mumbai</h3>
+
+                            <p>
+                                BOM • Mumbai Airport
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DEPARTURE -->
+
+                    <div class="flight-field">
+
+                        <span class="material-symbols-outlined field-icon">
+                            calendar_month
+                        </span>
+
+                        <div class="field-content">
+
+                            <label>DEPARTURE</label>
+
+                            <h3>19 Aug</h3>
+
+                            <p>
+                                Tuesday
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RETURN -->
+
+                    <div class="flight-field">
+
+                        <span class="material-symbols-outlined field-icon">
+                            calendar_month
+                        </span>
+
+                        <div class="field-content">
+
+                            <label>RETURN</label>
+
+                            <h3>23 Aug</h3>
+
+                            <p>
+                                Saturday
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSENGERS -->
+
+                    <div class="flight-field">
+
+                        <span class="material-symbols-outlined field-icon">
+                            person
+                        </span>
+
+                        <div class="field-content">
+
+                            <label>PASSENGERS</label>
+
+                            <h3>1 Adult</h3>
+
+                            <p>
+                                Economy
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     SEARCH BUTTON
+                ================================================== -->
+
+                <button
+                    type="button"
+                    class="search-flight-btn"
+                >
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    Search Flights
+
+                </button>
+
+
+            </div>
+
+
+        </section>
 </body>
 </html>
