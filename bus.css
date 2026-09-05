@@ -1,0 +1,1442 @@
+/* =========================================================
+   TICKET WINDOW
+   BUS BOOKING PAGE
+   COMPLETE CSS
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #0f172a;
+    overflow-x: hidden;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.bus-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.bus-hero {
+    position: relative;
+
+    min-height: 720px;
+
+    padding: 28px 6% 100px;
+
+    background-image: url("bus-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* Dark background */
+
+.bus-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4, 15, 30, 0.70),
+            rgba(7, 26, 53, 0.84)
+        );
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.bus-top {
+    position: relative;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.bus-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.bus-brand img {
+    width: 52px;
+    height: 52px;
+
+    object-fit: contain;
+
+    padding: 5px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+}
+
+.bus-brand h2 {
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+.bus-brand span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #cbd5e1;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   RENT BUS BUTTON
+========================================================= */
+
+.rent-bus-btn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 46px;
+
+    padding: 0 18px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.12);
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s ease;
+}
+
+.rent-bus-btn:hover {
+    background: #2563eb;
+
+    border-color: #2563eb;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,0.30);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.bus-heading {
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 900px;
+
+    margin: 55px auto 40px;
+
+    text-align: center;
+}
+
+.bus-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 16px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.10);
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    backdrop-filter: blur(10px);
+}
+
+.bus-heading h1 {
+    margin-top: 18px;
+
+    color: #ffffff;
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+}
+
+.bus-heading h1 span {
+    color: #60a5fa;
+}
+
+.bus-heading p {
+    max-width: 700px;
+
+    margin: 16px auto 0;
+
+    color: #dbeafe;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SEARCH CARD
+========================================================= */
+
+.bus-search-card {
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 25px;
+
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.97);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,0.30);
+
+    backdrop-filter: blur(15px);
+
+    animation: searchCardIn 0.9s ease;
+}
+
+
+/* =========================================================
+   TRIP TYPE
+========================================================= */
+
+.bus-trip-type {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 0 5px 20px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.bus-trip {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.bus-trip input {
+    position: absolute;
+
+    opacity: 0;
+}
+
+.bus-radio {
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+
+    border: 2px solid #94a3b8;
+
+    border-radius: 50%;
+}
+
+.bus-trip.active {
+    color: #2563eb;
+}
+
+.bus-trip.active .bus-radio {
+    border-color: #2563eb;
+}
+
+.bus-trip.active .bus-radio::after {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: #2563eb;
+}
+
+
+/* =========================================================
+   BUS FIELDS
+========================================================= */
+
+.bus-fields {
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        45px
+        1.2fr
+        1fr
+        1fr
+        1fr;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   FIELD
+========================================================= */
+
+.bus-field {
+    min-height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border: 1px solid #dbe3ed;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.bus-field:hover {
+    border-color: #93c5fd;
+
+    background: #f8fbff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(37,99,235,0.10);
+}
+
+
+/* =========================================================
+   FIELD ICON
+========================================================= */
+
+.bus-field > .material-symbols-outlined {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   FIELD CONTENT
+========================================================= */
+
+.bus-field > div {
+    min-width: 0;
+}
+
+.bus-field label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.bus-field h3 {
+    color: #0f172a;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.bus-field p {
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   SWAP
+========================================================= */
+
+.bus-swap {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #2563eb;
+
+    box-shadow:
+        0 5px 15px rgba(37,99,235,0.15);
+
+    transition: 0.3s ease;
+
+    z-index: 5;
+}
+
+.bus-swap:hover {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.bus-filters {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 18px;
+
+    padding-top: 17px;
+
+    border-top: 1px dashed #cbd5e1;
+}
+
+.bus-filters label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 30px;
+
+    background: #f8fafc;
+
+    color: #475569;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.bus-filters label:hover {
+    border-color: #93c5fd;
+
+    color: #2563eb;
+
+    background: #eff6ff;
+}
+
+.bus-filters input {
+    width: 15px;
+    height: 15px;
+
+    accent-color: #2563eb;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+========================================================= */
+
+.search-bus-btn {
+    width: 100%;
+
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,0.25);
+
+    transition: 0.3s ease;
+}
+
+.search-bus-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 32px rgba(37,99,235,0.35);
+}
+
+
+/* =========================================================
+   AVAILABLE BUSES
+========================================================= */
+
+.available-buses {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 70px 20px 100px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.bus-section-heading {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+}
+
+.bus-section-heading > div:first-child > span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.bus-section-heading h2 {
+    color: #0f172a;
+
+    font-size: 32px;
+
+    font-weight: 800;
+}
+
+.bus-section-heading p {
+    margin-top: 7px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   BUS COUNT
+========================================================= */
+
+.bus-count {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    border-radius: 30px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   BUS TICKET CARD
+========================================================= */
+
+.bus-ticket-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        190px
+        1fr
+        260px
+        130px
+        145px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    min-height: 165px;
+
+    margin-bottom: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(15,23,42,0.06);
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+
+    animation: busCardIn 0.7s ease both;
+}
+
+.bus-ticket-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 18px 40px rgba(15,23,42,0.11);
+}
+
+
+/* Left border */
+
+.bus-ticket-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: #2563eb;
+
+    transform: scaleY(0);
+
+    transform-origin: bottom;
+
+    transition: 0.35s ease;
+}
+
+.bus-ticket-card:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* =========================================================
+   TRAVELS
+========================================================= */
+
+.travels-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.travels-logo {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+
+    font-size: 25px;
+
+    transition: 0.3s ease;
+}
+
+.bus-ticket-card:hover .travels-logo {
+    transform: scale(1.08) rotate(-4deg);
+}
+
+.travels-info h3 {
+    color: #0f172a;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+.travels-info p {
+    margin-top: 4px;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.travels-info small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   BUS ROUTE
+========================================================= */
+
+.bus-route {
+    display: grid;
+
+    grid-template-columns: 80px 1fr 80px;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.bus-route > div:first-child,
+.bus-route > div:last-child {
+    text-align: center;
+}
+
+.bus-route strong {
+    display: block;
+
+    color: #0f172a;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+.bus-route span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   ROUTE LINE
+========================================================= */
+
+.bus-route-line {
+    text-align: center;
+}
+
+.bus-route-line small {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.bus-route-line > div {
+    position: relative;
+
+    width: 100%;
+
+    height: 2px;
+
+    margin: 10px 0;
+
+    background: #cbd5e1;
+}
+
+.bus-route-line > div::before,
+.bus-route-line > div::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    width: 8px;
+    height: 8px;
+
+    border: 2px solid #2563eb;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    transform: translateY(-50%);
+}
+
+.bus-route-line > div::before {
+    left: 0;
+}
+
+.bus-route-line > div::after {
+    right: 0;
+}
+
+.bus-route-line i {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow:
+        0 4px 12px rgba(37,99,235,0.25);
+
+    animation: busPulse 2s infinite ease-in-out;
+}
+
+.bus-route-line i::after {
+    content: "🚌";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    font-size: 12px;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* =========================================================
+   BUS FEATURES
+========================================================= */
+
+.bus-features {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 7px;
+}
+
+.bus-features span {
+    padding: 7px 9px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+
+    color: #475569;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.bus-ticket-card:hover .bus-features span {
+    border-color: #dbeafe;
+
+    background: #eff6ff;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.bus-price {
+    padding-left: 18px;
+
+    text-align: right;
+
+    border-left: 1px dashed #cbd5e1;
+}
+
+.bus-price small {
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+.bus-price h2 {
+    margin-top: 4px;
+
+    color: #0f172a;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.bus-ticket-card:hover .bus-price h2 {
+    color: #2563eb;
+}
+
+.bus-price p {
+    margin-top: 2px;
+
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SELECT BUTTON
+========================================================= */
+
+.select-bus-btn {
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 13px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.select-bus-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(37,99,235,0.30);
+}
+
+.select-bus-btn .material-symbols-outlined {
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+.select-bus-btn:hover .material-symbols-outlined {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes searchCardIn {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes busCardIn {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes busPulse {
+
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+/* Stagger */
+
+.bus-ticket-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.bus-ticket-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.bus-ticket-card:nth-child(4) {
+    animation-delay: 0.3s;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .bus-fields {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bus-swap {
+        display: none;
+    }
+
+    .bus-ticket-card {
+        grid-template-columns:
+            170px
+            1fr
+            180px;
+    }
+
+    .bus-features {
+        grid-column: 1 / -1;
+    }
+
+    .bus-price {
+        text-align: right;
+    }
+
+    .select-bus-btn {
+        grid-column: 1 / -1;
+
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .bus-hero {
+        min-height: auto;
+
+        padding: 22px 16px 70px;
+    }
+
+    .bus-top {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .bus-brand img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .bus-brand h2 {
+        font-size: 18px;
+    }
+
+    .rent-bus-btn {
+        min-height: 42px;
+
+        padding: 0 12px;
+
+        font-size: 11px;
+    }
+
+    .bus-heading {
+        margin-top: 45px;
+    }
+
+    .bus-heading h1 {
+        font-size: 38px;
+    }
+
+    .bus-heading p {
+        font-size: 14px;
+    }
+
+    .bus-search-card {
+        padding: 17px;
+
+        border-radius: 18px;
+    }
+
+    .bus-trip-type {
+        gap: 18px;
+
+        overflow-x: auto;
+    }
+
+    .bus-trip {
+        white-space: nowrap;
+    }
+
+    .bus-fields {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .bus-field {
+        min-height: 76px;
+    }
+
+    .bus-filters {
+        gap: 7px;
+    }
+
+    .bus-filters label {
+        padding: 7px 9px;
+
+        font-size: 10px;
+    }
+
+
+    /* Results */
+
+    .available-buses {
+        padding: 50px 16px 70px;
+    }
+
+    .bus-section-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .bus-section-heading h2 {
+        font-size: 28px;
+    }
+
+    .bus-ticket-card {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .bus-route {
+        grid-template-columns:
+            70px
+            1fr
+            70px;
+    }
+
+    .bus-route strong {
+        font-size: 18px;
+    }
+
+    .bus-features {
+        justify-content: flex-start;
+
+        grid-column: auto;
+    }
+
+    .bus-price {
+        padding-left: 0;
+
+        padding-top: 15px;
+
+        text-align: left;
+
+        border-left: none;
+
+        border-top: 1px dashed #cbd5e1;
+    }
+
+    .select-bus-btn {
+        grid-column: auto;
+
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .bus-heading h1 {
+        font-size: 32px;
+    }
+
+    .bus-heading p {
+        font-size: 13px;
+    }
+
+    .travels-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bus-route {
+        grid-template-columns:
+            60px
+            1fr
+            60px;
+    }
+
+    .bus-route strong {
+        font-size: 16px;
+    }
+
+    .bus-count {
+        font-size: 11px;
+    }
+}
