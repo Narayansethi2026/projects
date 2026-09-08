@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rent section </title>
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Rent a Bus | Ticket Window</title>
+
+    <link rel="stylesheet" href="rent.css">
+
+    <!-- Google Material Icons -->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     MAIN PAGE
+===================================================== -->
+
+<main class="rent-page">
+
+
+    <!-- =================================================
+         HEADER
+    ================================================== -->
+
+    <header class="rent-header">
+
+        <div class="rent-brand">
+
+            <img src="logo.png"
+                 alt="Ticket Window Logo">
+
+            <div>
+                <h2>Ticket Window</h2>
+                <span>Bus Rental</span>
+            </div>
+
+        </div>
+
+
+        <a href="bus.html"
+           class="back-btn">
+
+            <span class="material-symbols-outlined">
+                arrow_back
+            </span>
+
+            Back to Bus Booking
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================================
+         HERO TITLE
+    ================================================== -->
+
+    <section class="rent-intro">
+
+        <span class="intro-tag">
+            🚌 BUS RENTAL
+        </span>
+
+        <h1>
+            Rent a bus for your
+            <span>next journey.</span>
+        </h1>
+
+        <p>
+            Plan family trips, weddings, tours, corporate
+            journeys and group travel with a comfortable bus.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         RENTAL FORM
+    ================================================== -->
+
+    <section class="rental-container">
+
+
+        <form id="rentalForm">
+
+
+            <!-- =========================================
+                 TRIP DETAILS
+            ========================================== -->
+
+            <div class="form-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <span class="material-symbols-outlined">
+                            route
+                        </span>
+                    </div>
+
+                    <div>
+                        <h2>Trip Details</h2>
+                        <p>Tell us about your journey</p>
+                    </div>
+
+                </div>
+
+
+                <!-- TRIP TYPE -->
+
+                <div class="trip-selection">
+
+                    <label class="trip-box active">
+
+                        <input type="radio"
+                               name="tripType"
+                               value="oneway"
+                               checked>
+
+                        <span class="custom-radio"></span>
+
+                        <div>
+                            <strong>One Way</strong>
+                            <small>Single journey</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="trip-box">
+
+                        <input type="radio"
+                               name="tripType"
+                               value="roundtrip">
+
+                        <span class="custom-radio"></span>
+
+                        <div>
+                            <strong>Round Trip</strong>
+                            <small>Return journey</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="trip-box">
+
+                        <input type="radio"
+                               name="tripType"
+                               value="multiday">
+
+                        <span class="custom-radio"></span>
+
+                        <div>
+                            <strong>Multi Day</strong>
+                            <small>Tour package</small>
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- LOCATION -->
+
+                <div class="form-grid two">
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Pickup Location
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+
+                            <input
+                                type="text"
+                                id="fromLocation"
+                                placeholder="Enter pickup city"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Destination
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                flag
+                            </span>
+
+                            <input
+                                type="text"
+                                id="toLocation"
+                                placeholder="Enter destination"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- DATES -->
+
+                <div class="form-grid three">
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Journey Date
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+
+                            <input
+                                type="date"
+                                id="journeyDate"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group"
+                         id="returnDateGroup">
+
+                        <label>
+                            Return Date
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                event_repeat
+                            </span>
+
+                            <input
+                                type="date"
+                                id="returnDate">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Pickup Time
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                schedule
+                            </span>
+
+                            <input
+                                type="time"
+                                id="pickupTime"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STOPS -->
+
+                <div class="input-group">
+
+                    <label>
+                        Additional Stops
+                        <span>Optional</span>
+                    </label>
+
+                    <div class="input-box">
+
+                        <span class="material-symbols-outlined">
+                            add_location_alt
+                        </span>
+
+                        <input
+                            type="text"
+                            id="stops"
+                            placeholder="Example: Vadodara, Ahmedabad">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PASSENGERS
+            ========================================== -->
+
+            <div class="form-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <span class="material-symbols-outlined">
+                            groups
+                        </span>
+                    </div>
+
+                    <div>
+                        <h2>Passengers</h2>
+                        <p>How many people are travelling?</p>
+                    </div>
+
+                </div>
+
+
+                <div class="passenger-box">
+
+                    <div>
+
+                        <strong>
+                            Total Passengers
+                        </strong>
+
+                        <small>
+                            Choose the number of travellers
+                        </small>
+
+                    </div>
+
+
+                    <div class="counter">
+
+                        <button
+                            type="button"
+                            id="minusPassenger">
+                            −
+                        </button>
+
+                        <input
+                            type="number"
+                            id="passengers"
+                            value="20"
+                            min="1"
+                            max="100"
+                            readonly>
+
+                        <button
+                            type="button"
+                            id="plusPassenger">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUS SUGGESTION -->
+
+                <div class="bus-suggestion"
+                     id="busSuggestion">
+
+                    🚌 Recommended:
+                    <strong>27 Seater</strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 BUS TYPE
+            ========================================== -->
+
+            <div class="form-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <span class="material-symbols-outlined">
+                            directions_bus
+                        </span>
+                    </div>
+
+                    <div>
+                        <h2>Choose Your Bus</h2>
+                        <p>Select your preferred bus</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- BUS CAPACITY -->
+
+                <h3 class="sub-heading">
+                    Bus Capacity
+                </h3>
+
+
+                <div class="option-grid">
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="capacity"
+                            value="18">
+
+                        <span>18</span>
+
+                        <div>
+                            <strong>18 Seater</strong>
+                            <small>Mini Bus</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="capacity"
+                            value="27">
+
+                        <span>27</span>
+
+                        <div>
+                            <strong>27 Seater</strong>
+                            <small>Mini Coach</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="capacity"
+                            value="35"
+                            checked>
+
+                        <span>35</span>
+
+                        <div>
+                            <strong>35 Seater</strong>
+                            <small>Coach</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="capacity"
+                            value="40">
+
+                        <span>40</span>
+
+                        <div>
+                            <strong>40 Seater</strong>
+                            <small>Large Coach</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="capacity"
+                            value="45">
+
+                        <span>45</span>
+
+                        <div>
+                            <strong>45 Seater</strong>
+                            <small>Luxury Coach</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="capacity"
+                            value="50">
+
+                        <span>50+</span>
+
+                        <div>
+                            <strong>50+ Seater</strong>
+                            <small>Large Group</small>
+                        </div>
+
+                    </label>
+
+
+                </div>
+
+
+
+                <!-- BUS FEATURES -->
+
+                <h3 class="sub-heading">
+                    Bus Features
+                </h3>
+
+
+                <div class="feature-options">
+
+
+                    <label class="feature-box">
+
+                        <input
+                            type="radio"
+                            name="comfort"
+                            value="ac"
+                            checked>
+
+                        <span class="material-symbols-outlined">
+                            ac_unit
+                        </span>
+
+                        <div>
+                            <strong>AC</strong>
+                            <small>Air Conditioned</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="feature-box">
+
+                        <input
+                            type="radio"
+                            name="comfort"
+                            value="nonac">
+
+                        <span class="material-symbols-outlined">
+                            air
+                        </span>
+
+                        <div>
+                            <strong>Non-AC</strong>
+                            <small>Regular Bus</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="feature-box">
+
+                        <input
+                            type="radio"
+                            name="seatType"
+                            value="seater"
+                            checked>
+
+                        <span class="material-symbols-outlined">
+                            airline_seat_recline_normal
+                        </span>
+
+                        <div>
+                            <strong>Seater</strong>
+                            <small>Comfortable Seats</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="feature-box">
+
+                        <input
+                            type="radio"
+                            name="seatType"
+                            value="sleeper">
+
+                        <span class="material-symbols-outlined">
+                            hotel
+                        </span>
+
+                        <div>
+                            <strong>Sleeper</strong>
+                            <small>Sleeping Berths</small>
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- CATEGORY -->
+
+                <h3 class="sub-heading">
+                    Bus Category
+                </h3>
+
+
+                <div class="category-options">
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="category"
+                            value="standard"
+                            checked>
+
+                        Standard
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="category"
+                            value="deluxe">
+
+                        Deluxe
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="category"
+                            value="luxury">
+
+                        Luxury
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="category"
+                            value="volvo">
+
+                        Volvo / Premium
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PURPOSE
+            ========================================== -->
+
+            <div class="form-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <span class="material-symbols-outlined">
+                            celebration
+                        </span>
+                    </div>
+
+                    <div>
+                        <h2>Trip Purpose</h2>
+                        <p>What is the purpose of your trip?</p>
+                    </div>
+
+                </div>
+
+
+                <div class="purpose-grid">
+
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="purpose"
+                            value="family"
+                            checked>
+                        👨‍👩‍👧 Family Trip
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="purpose"
+                            value="tour">
+                        🏖️ Vacation / Tour
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="purpose"
+                            value="wedding">
+                        💍 Wedding
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="purpose"
+                            value="school">
+                        🏫 School / College
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="purpose"
+                            value="corporate">
+                        🏢 Corporate
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="purpose"
+                            value="religious">
+                        🛕 Religious Trip
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 CONTACT
+            ========================================== -->
+
+            <div class="form-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </div>
+
+                    <div>
+                        <h2>Contact Details</h2>
+                        <p>Where should we send your quote?</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid two">
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Mobile Number
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="material-symbols-outlined">
+                                phone
+                            </span>
+
+                            <input
+                                type="tel"
+                                id="mobile"
+                                placeholder="10 digit mobile number"
+                                maxlength="10"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Email Address
+                        <span>Optional</span>
+                    </label>
+
+                    <div class="input-box">
+
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@email.com">
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Special Requirements
+                        <span>Optional</span>
+                    </label>
+
+                    <textarea
+                        id="requirements"
+                        placeholder="Tell us about luggage, extra stops, wheelchair access, music system, etc."></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 GET QUOTE
+            ========================================== -->
+
+            <button
+                type="submit"
+                class="quote-btn">
+
+                <span class="material-symbols-outlined">
+                    calculate
+                </span>
+
+                Get Rental Quote
+
+            </button>
+
+
+        </form>
+
+
+
+        <!-- =============================================
+             QUOTE RESULT
+        ============================================== -->
+
+        <aside class="quote-panel"
+               id="quotePanel">
+
+
+            <div class="quote-top">
+
+                <span class="material-symbols-outlined">
+                    directions_bus
+                </span>
+
+                <span>
+                    RENTAL ESTIMATE
+                </span>
+
+            </div>
+
+
+            <h2>
+                Your Bus Rental
+            </h2>
+
+            <p>
+                Fill the form and get an estimated
+                rental price.
+            </p>
+
+
+            <div class="quote-empty"
+                 id="quoteEmpty">
+
+                <span class="material-symbols-outlined">
+                    receipt_long
+                </span>
+
+                <h3>
+                    Your estimate will appear here
+                </h3>
+
+                <p>
+                    Complete the trip details and
+                    click “Get Rental Quote”.
+                </p>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="quote-result"
+                 id="quoteResult">
+
+
+                <div class="result-route">
+
+                    <div>
+                        <small>FROM</small>
+                        <strong id="resultFrom">
+                            -
+                        </strong>
+                    </div>
+
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+
+                    <div>
+                        <small>TO</small>
+                        <strong id="resultTo">
+                            -
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="result-line"></div>
+
+
+                <div class="result-row">
+
+                    <span>Passengers</span>
+
+                    <strong id="resultPassengers">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>Bus</span>
+
+                    <strong id="resultBus">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>Comfort</span>
+
+                    <strong id="resultComfort">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>Category</span>
+
+                    <strong id="resultCategory">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>Trip</span>
+
+                    <strong id="resultTrip">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="estimated-price">
+
+                    <small>
+                        Estimated Rental Fare
+                    </small>
+
+                    <h3 id="resultPrice">
+                        ₹0
+                    </h3>
+
+                    <p>
+                        Final price may vary based on
+                        route, duration and requirements.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="request-btn"
+                    id="requestBtn">
+
+                    Request This Bus
+
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="rent.js"></script>
+
+</body>
+</html>
+</body>
+</html>
