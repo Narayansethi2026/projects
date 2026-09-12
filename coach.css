@@ -199,4 +199,188 @@ label {
 
     line-height: 1.7;
 }
+/* =====================================================
+   CONTAINER
+===================================================== */
 
+.coach-container {
+    width: min(1250px, 92%);
+
+    margin: -25px auto 70px;
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 350px;
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.form-card {
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow: 0 8px 25px rgba(15,23,42,.06);
+}
+
+
+/* CARD HEADING */
+
+.card-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+}
+
+.heading-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+.card-heading h2 {
+    font-size: 19px;
+}
+
+.card-heading p {
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.form-grid {
+    display: grid;
+
+    gap: 15px;
+
+    margin-bottom: 5px;
+}
+
+.form-grid.two {
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-grid.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* =====================================================
+   INPUT GROUP
+===================================================== */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group > label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #334155;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.input-group label span {
+    margin-left: 4px;
+
+    color: #94a3b8;
+
+    font-weight: 500;
+}
+
+
+/* INPUT */
+
+.input-box {
+    min-height: 49px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0 12px;
+
+    border: 1px solid #dbe3ed;
+
+    border-radius: 10px;
+
+    background: white;
+
+    transition: .25s;
+}
+
+.input-box:focus-within {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,.08);
+}
+
+.input-box .material-symbols-outlined {
+    color: #2563eb;
+
+    font-size: 20px;
+}
+
+.input-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #0f172a;
+
+    font-size: 12px;
+}
+
+.input-box small {
+    color: #64748b;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+/* radio options */
