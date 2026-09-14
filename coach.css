@@ -477,3 +477,278 @@ label {
     font-size: 12px;
 }
 /* class grid */
+.class-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.class-card {
+    min-height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    transition: .25s;
+}
+
+.class-card input {
+    display: none;
+}
+
+.class-code {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #f1f5f9;
+
+    color: #334155;
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+.class-card strong {
+    display: block;
+
+    font-size: 11px;
+}
+
+.class-card small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 8px;
+}
+
+.class-card:has(input:checked) {
+    border-color: #2563eb;
+
+    background: #eff6ff;
+}
+
+.class-card:has(input:checked) .class-code {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.service-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.service-card {
+    min-height: 85px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 11px;
+
+    transition: .25s;
+}
+
+.service-card input {
+    display: none;
+}
+
+.service-card > .material-symbols-outlined {
+    color: #2563eb;
+
+    font-size: 21px;
+}
+
+.service-card strong {
+    display: block;
+
+    font-size: 10px;
+}
+
+.service-card small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 8px;
+}
+
+.service-card:has(input:checked) {
+    border-color: #2563eb;
+
+    background: #eff6ff;
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+textarea {
+    width: 100%;
+
+    min-height: 105px;
+
+    padding: 13px;
+
+    resize: vertical;
+
+    border: 1px solid #dbe3ed;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,.08);
+}
+
+
+/* =====================================================
+   SUBMIT
+===================================================== */
+
+.submit-btn {
+    width: 100%;
+
+    min-height: 57px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 12px 28px rgba(37,99,235,.25);
+
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 35px rgba(37,99,235,.32);
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.booking-summary {
+    position: sticky;
+
+    top: 20px;
+
+    align-self: start;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background: #071a35;
+
+    color: white;
+
+    box-shadow:
+        0 15px 40px rgba(15,23,42,.18);
+}
+
+
+/* SUMMARY HEADER */
+
+.summary-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.summary-header > .material-symbols-outlined {
+    color: #60a5fa;
+
+    font-size: 27px;
+}
+
+.summary-header small {
+    color: #60a5fa;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.summary-header h2 {
+    margin-top: 4px;
+
+    font-size: 20px;
+}
+/* route */
