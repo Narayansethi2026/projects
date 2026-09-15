@@ -752,3 +752,267 @@ textarea:focus {
     font-size: 20px;
 }
 /* route */
+
+route-summary {
+    margin-top: 25px;
+
+    padding: 16px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 35px 1fr;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.06);
+}
+
+.route-summary small {
+    display: block;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+.route-summary strong {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 14px;
+}
+
+.route-summary span:not(.material-symbols-outlined) {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #64748b;
+
+    font-size: 8px;
+}
+
+.route-arrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.route-arrow .material-symbols-outlined {
+    color: #60a5fa;
+}
+
+
+/* =====================================================
+   SUMMARY DETAILS
+===================================================== */
+
+.summary-details {
+    margin-top: 20px;
+}
+
+.summary-row {
+    min-height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.summary-row span {
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+.summary-row strong {
+    color: white;
+
+    font-size: 10px;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   INQUIRY STATUS
+===================================================== */
+
+.inquiry-status {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 22px;
+
+    padding: 14px;
+
+    border-radius: 11px;
+
+    background: rgba(37,99,235,.15);
+}
+
+.inquiry-status > .material-symbols-outlined {
+    color: #60a5fa;
+
+    font-size: 21px;
+}
+
+.inquiry-status strong {
+    font-size: 10px;
+}
+
+.inquiry-status p {
+    margin-top: 5px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   NOTE
+===================================================== */
+
+.summary-note {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 17px;
+
+    color: #94a3b8;
+}
+
+.summary-note .material-symbols-outlined {
+    color: #60a5fa;
+
+    font-size: 17px;
+}
+
+.summary-note p {
+    font-size: 8px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .coach-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-summary {
+        position: relative;
+
+        top: auto;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .coach-header {
+        padding: 12px 4%;
+    }
+
+    .coach-brand img {
+        width: 43px;
+        height: 43px;
+    }
+
+    .coach-brand h2 {
+        font-size: 17px;
+    }
+
+    .back-btn {
+        padding: 9px;
+
+        font-size: 0;
+    }
+
+    .back-btn .material-symbols-outlined {
+        font-size: 20px;
+    }
+
+    .coach-hero {
+        padding: 50px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 37px;
+    }
+
+    .coach-container {
+        width: 94%;
+
+        margin-top: -15px;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-grid.two,
+    .form-grid.three {
+        grid-template-columns: 1fr;
+    }
+
+    .class-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .class-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-options {
+        flex-direction: column;
+    }
+
+    .route-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .route-arrow {
+        justify-content: flex-start;
+    }
+}
